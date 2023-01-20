@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
   </head>
   <body>
@@ -19,12 +34,14 @@
             <span class="logo-accent">Finance</span> Ledger
           </a>
 
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link link" href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link link" href="">About</a></li>
-            <li class="nav-item"><a class="nav-link link" href="">Cases</a></li>
-            <li class="nav-item"><a class="nav-link link" href="">log</a></li>
-            <li class="nav-item"><a class="nav-link link" href="">Contact</a></li>
+          <ul class="nav-list list">
+            <li class="nav-item"><a class="nav-link link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link link" href="./index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link link" href="./index.html#cases">Cases</a></li>
+            <li class="nav-item"><a class="nav-link link" href="./index.html#blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -32,7 +49,7 @@
     <main class="page-main">
       <!-- HERO -->
       <section class="hero-section">
-        <div class="hero-container">
+        <div class="hero-container container">
           <h1 class="hero-title">The Sky Is The Limit</h1>
           <p class="hero-text">We provide world class financial assistance</p>
           <a href="" class="hero-link link">
@@ -47,34 +64,43 @@
       <!-- FEATURES -->
       <section class="features-section section">
         <div class="features-container container">
-          <h2 class="features-title title">Features</h2>
+          <h2 class="features-title title visually-hidden">Features</h2>
           <ul class="features-list list">
             <li class="features-item">
-              <svg class="features-icon" width="35" height="35">
-                <use href="./images/svg/sprite.svg#university"></use>
-              </svg>
-              <h3 class="features-subtitle">Investmant Banking</h3>
-              <p class="features-text">
+              <div class="features-thumb">
+                <svg class="features-icon" width="35" height="35">
+                  <use href="./images/svg/sprite.svg#university"></use>
+                </svg>
+              </div>
+
+              <h3 class="features-subtitle subtitle">Investmant Banking</h3>
+              <p class="features-text text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
             </li>
             <li class="features-item">
-              <svg class="features-icon" width="35" height="35">
-                <use href="./images/svg/sprite.svg#book"></use>
-              </svg>
-              <h3 class="features-subtitle">Portfolio Manager</h3>
-              <p class="features-text">
+              <div class="features-thumb">
+                <svg class="features-icon" width="35" height="35">
+                  <use href="./images/svg/sprite.svg#book"></use>
+                </svg>
+              </div>
+
+              <h3 class="features-subtitle subtitle">Portfolio Manager</h3>
+              <p class="features-text text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
             </li>
             <li class="features-item">
-              <svg class="features-icon" width="35" height="35">
-                <use href="./images/svg/sprite.svg#pencil"></use>
-              </svg>
-              <h3 class="features-subtitle">Tax & Custudio</h3>
-              <p class="features-text">
+              <div class="features-thumb">
+                <svg class="features-icon" width="35" height="35">
+                  <use href="./images/svg/sprite.svg#pencil"></use>
+                </svg>
+              </div>
+
+              <h3 class="features-subtitle subtitle">Tax & Custudio</h3>
+              <p class="features-text text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
                 necessitatibus!
               </p>
@@ -84,7 +110,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about-section section">
+      <section id="about" class="about-section section">
         <div class="about-container container">
           <picture>
             <source
@@ -133,16 +159,14 @@
       </section>
 
       <!-- CASES -->
-      <section class="cases-section section">
+      <section id="cases" class="cases-section section">
         <div class="cases-container container">
-          <p class="cases-suptitle suptitle">What you are looking for</p>
-          <h2 class="cases-title title">We provide bespoke solutions</h2>
+          <p class="cases-suptitle suptitle">This is what we do</p>
+          <h2 class="cases-title title">Business Cases</h2>
           <p class="cases-text text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-            quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-            itaque rerum temporibus doloribus iste maiores deleniti?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
           </p>
-          <ul class="cases-list">
+          <ul class="cases-list list">
             <li class="cases-item">
               <picture>
                 <source
@@ -524,7 +548,7 @@
       </section>
 
       <!-- BLOG -->
-      <section class="blog-section section">
+      <section id="blog" class="blog-section section">
         <div class="blog-container container">
           <picture>
             <source
@@ -620,7 +644,7 @@
               </picture>
               <div class="team-card">
                 <h3 class="team-subtitle">John Doe</h3>
-                <p class="team-text text">President</p>
+                <p class="text">President</p>
               </div>
             </li>
             <li class="team-item">
@@ -662,7 +686,7 @@
               </picture>
               <div class="team-card">
                 <h3 class="team-subtitle">Jane Doe</h3>
-                <p class="team-text text">Vice President</p>
+                <p class="text">Vice President</p>
               </div>
             </li>
             <li class="team-item">
@@ -704,7 +728,7 @@
               </picture>
               <div class="team-card">
                 <h3 class="team-subtitle">Steve Smith</h3>
-                <p class="team-text text">Marketing Head</p>
+                <p class="text">Marketing Head</p>
               </div>
             </li>
           </ul>
@@ -712,7 +736,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact-section section">
+      <section id="contact" class="contact-section section">
         <div class="contact-container container">
           <picture>
             <source
